@@ -8,175 +8,162 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 <body>
 
+    <!--SLIDING BACKGROUND-->
     <header>
         <div class="slider-frame">
+
             <div class="slide-images">
+
                     <div class="img-container">
-                        <img src="image1.jpg">
+                        <img src="Portfolio/Illustrations/ill1.jpg" onclick="openLightbox(this)">
                     </div>
                     <div class="img-container">
-                        <img src="image2.jpg">
+                        <img src="Portfolio/Illustrations/ill2.jpg" onclick="openLightbox(this)">
                     </div>
                     <div class="img-container">
-                        <img src="image3.jpg">
+                        <img src="Portfolio/Illustrations/ill3.jpg" onclick="openLightbox(this)">
                     </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill4.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill5.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill6.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill7.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill8.jpg" onclick="openLightbox(this)">
+                    </div>
+
+
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill1.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill2.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill3.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill4.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill5.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill6.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill7.jpg" onclick="openLightbox(this)">
+                    </div>
+                    <div class="img-container">
+                        <img src="Portfolio/Illustrations/ill8.jpg" onclick="openLightbox(this)">
+                    </div>
+
     </header>
         <div class="text-overlay">
-            <h1 style="font-family: Righteous; font-size: 100px;">Art of Morgan Diaz</h1>
+            <h1 style="font-family: Righteous; font-size: 80px;">Art of Morgan Diaz</h1>
             <p>Graphic Design | Illustration</p>
         </div>
     <nav>
-        <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#basic-info">Basic Info</a>
+        <a href="#basic-info">About</a>
     </nav>
 
     <div class="main-content">
         <!-- About Section -->
-        <div id="about" class="section-box">
-            <h2 style="text-align: center;">About Me</h2>
-            <p>Hello! I am a passionate graphic designer and illustrator with a love for creativity and visual storytelling. With a background in digital art and design, I specialize in creating unique illustrations and captivating designs that tell a story. I have worked with various clients, bringing their visions to life through my art.</p>
-        </div>
+        <div id="about" class="aboutone">
+            <p style="text-align: center; font-size: 1.3em;" >Morgan Diaz is an aspiring graphic designer and illustrator based from the Philippines.</p>
+            <p style="text-align: center; font-size: 1.3em;">Currently studying in Bicol University Polangui, he is passionate about digital graphic design and illustrations inspired by great artists from the past and present.</p>
 
-        <!-- Portfolio Section with Accordion -->
+        <!-- Portfolio Section -->
         <div id="portfolio" class="section-box">
-            <h2 style="text-align: center;">Portfolio</h2>
+            <h2 style="text-align: center; font-family: Bebas Neue; font-weight: 200;">My Works</h2>
 
-            <!-- Accordion Button for Illustrations -->
-            <button class="accordion">Illustrations</button>
-            <div class="panel">
-                <div class="portfolio-gallery">
-                    <div class="carousel-container">
-                        <div class="carousel">
-                          <img src="image1.jpg" onclick ="openLightbox(this)">
-                          <img src="image2.jpg" onclick ="openLightbox(this)">
-                          <img src="image3.jpg" onclick ="openLightbox(this)">
-                        </div>
-                        <button class="arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
-                        <button class="arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
-                      </div>
-                      <!-- Lightbox -->
-                    <div class="lightbox" id="lightbox">
-                        <button class="lightbox-close" onclick="closeLightbox()">×</button>
-                        <img id="lightbox-image" src="" alt="Expanded View">
-                    </div>
+            <!-- Illustrations -->
+            <div class="portfolio-gallery">
+                <div class="image-grid">
+                    <img src="Portfolio/Illustrations/ill1.jpg" alt="Image 1" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill2.jpg" alt="Image 2" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill3.jpg" alt="Image 3" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill4.jpg" alt="Image 4" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill5.jpg" alt="Image 5" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill6.jpg" alt="Image 6" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill7.jpg" alt="Image 7" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill8.jpg" alt="Image 8" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill9.jpg" alt="Image 8" onclick="openLightbox(this)">
+                    <img src="Portfolio/Illustrations/ill10.jpg" alt="Image 8" onclick="openLightbox(this)">
                 </div>
             </div>
 
-            <!-- Accordion Button for Social Media Posters -->
-            <button class="accordion">Social Media Posters</button>
-            <div class="panel">
-                <div class="portfolio-gallery">
-                    <div class="portfolio-item">
-                        <img src="your-social-media-poster1.jpg" alt="Poster 1">
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="your-social-media-poster2.jpg" alt="Poster 2">
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="your-social-media-poster3.jpg" alt="Poster 3">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Accordion Button for Merchandise Designs and Brand Designs -->
-            <button class="accordion">Merchandise & Branding</button>
-            <div class="panel">
-                <div class="portfolio-gallery">
-                    <div class="portfolio-item">
-                        <img src="your-merchandise-design1.jpg" alt="Merchandise 1">
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="your-merchandise-design2.jpg" alt="Merchandise 2">
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="your-merchandise-design3.jpg" alt="Merchandise 3">
-                    </div>
-                </div>
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close" onclick="closeLightbox()">×</button>
+                <img id="lightbox-image" src="" alt="Expanded View">
             </div>
 
         </div>
 
+        
         <!-- Basic Info Section -->
         <div id="basic-info" class="section-box">
-            <h2>Basic Information</h2>
-            <p><strong>Location:</strong> City, Country</p>
-            <p><strong>Email:</strong> your-email@example.com</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
-                    <i>Instagram</i>
+                 <div class="about">
+        <!-- Image on the Left -->
+        <div class="about-image">
+            <img src="Portfolio/Illustrations/Morgy.jpg" alt="About Me" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- Text on the Right -->
+        <div class="about-text">
+            <h2 style="text-align: center; font-family: Bebas Neue; font-weight: 200;">About the Artist</h2>
+            <p>A 3rd-year Animation major student specializing in illustration and conceptualization of ideas, passionate about bringing creative visions to life through visual storytelling. He excels in transforming abstract concepts into tangible, compelling images, often using a variety of mediums such as digital painting, traditional sketching, or 3D modeling. With a keen eye for detail and an understanding of design principles, he wors to visually communicate ideas that resonate with the audience, whether for entertainment, advertising, or product design. Their process often begins with brainstorming and sketching, followed by refining ideas into more polished visuals, always with a focus on clarity, emotion, and narrative. He thrives on challenges, pushing the boundaries of imagination to produce work that is both innovative and thought-provoking.  </p>
+            <p style="text-align: center;">Find me at:</p>
+
+            <div class="social-links" style="text-align: center; margin-top: 20px;">
+                <a href="https://www.facebook.com/profile.php?id=100093580248499" target="_blank" style="margin: 0 15px; text-decoration: none; font-size: 2em; color: #ffffff;">
+                    <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
                 </a>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
-                    <i>LinkedIn</i>
-                </a>
-                <a href="https://www.behance.net/yourusername" target="_blank" title="Behance">
-                    <i>Behance</i>
+                <a href="https://www.instagram.com/yowg.art/" target="_blank" style="margin: 0 15px; text-decoration: none; font-size: 2em; color: #ffffff;">
+                    <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
                 </a>
             </div>
-        </div>
-    </div>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
+        </div>
+        </div>
+        </div>
+
+        
+
 
     <script>
-        // Accordion functionality
-        const acc = document.getElementsByClassName("accordion");
-        for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
+        // Open the lightbox with the clicked image
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            
+            // Set the lightbox image source to the clicked image
+            lightboxImage.src = imgElement.src;
+            
+            // Show the lightbox
+            lightbox.style.display = 'flex';
         }
 
-        //Dropdown Slider
-        let currentIndex = 0;
-
-// Move the carousel slide
-function moveSlide(direction) {
-  const carousel = document.querySelector('.carousel');
-  const slides = document.querySelectorAll('.carousel img');
-  const totalSlides = slides.length;
-  
-  currentIndex += direction;
-
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-// Open the lightbox with the clicked image
-function openLightbox(imgElement) {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImage = document.getElementById('lightbox-image');
-      
-      // Set the lightbox image source to the clicked image
-      lightboxImage.src = imgElement.src;
-      
-      // Show the lightbox
-      lightbox.style.display = 'flex';
-    }
-
-    // Close the lightbox
-    function closeLightbox() {
-      const lightbox = document.getElementById('lightbox');
-      lightbox.style.display = 'none';
-    }
-  </script>
+        // Close the lightbox
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>

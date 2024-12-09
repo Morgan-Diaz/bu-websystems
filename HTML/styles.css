@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Righteous&display=swap');
 
 .righteous-regular {
     font-family: "Righteous", sans-serif;
@@ -22,64 +23,31 @@ header {
 
 .slider-frame{
     overflow: hidden;
-    display: flex;
+    display: grid;
     height: 1080px;
     width: 1920px;
-}
-
-/*---------- SLIDE ANIMATION --------------*/
-
-
-@keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
-}
-
-@-webkit-keyframes slide_animation{
-    0% {left:0px;}
-    10% {left:0px;}
-    20% {left:1200px;}
-    30% {left:1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left:0px;}
+    place-items: center
+;
 }
 
 .slide-images{
     display: flex;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    animation-name: slide_animation;
-    -webkit-animation-duration: 33s;
-    animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
+    width: calc(1920px * 14);
+    animation: scroll 70s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-1920px * 7));
+    }
 }
 
 .img-container{
     height: 1080px;
-    width: 1920px;
-    position: relative;
     display: flex;
-    float: left;
 }
 
 header::before {
@@ -114,7 +82,7 @@ header::before {
 
 nav {
     text-align: center;
-    padding: 30px 0;
+    padding: 80px ;
     background-image: linear-gradient(to bottom, transparent, #1a2a3a); /* Gradient from transparent to background color */
     }
     
@@ -137,8 +105,8 @@ nav {
     }
 
 .main-content {
-    padding: 40px;
-    max-width: 1200px;
+    padding: 20px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -146,16 +114,59 @@ nav {
     background-color: #172b47; /* Darker blue box background */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for contrast */
-    padding: 30px;
+    padding: 100px;
+    padding-top: 2%;
     margin-bottom: 50px;
 }
 
-footer {
-    background-image: linear-gradient(to bottom, transparent, #000000); /* Gradient from transparent to black */
-    color: #e0e7ff; /* Light blue text */
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.aboutone { 
+    line-height: 2;
 }
+
+/* Basic Info Section Styling */
+#basic-info {
+    padding: 50px 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 30%;
+    margin-right: 0; /* Remove any space to the right of the image */
+    margin-left: 100px;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify; /* Justify the text */
+    margin-left: 100px; /* Remove any space to the left of the text */
+    margin-right: 100px;
+}
+
+/* Make sure the layout looks good on small screens */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 100%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+
+
+
